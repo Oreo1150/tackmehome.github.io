@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TAKE ME HOME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="./Css/index.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+        style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#Menu" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">TAKE ME HOME</div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter cursorPointer" onclick="linkPage(0)">
+                <img src="./Image/100pipers.jpg" alt="Sandwich" style="width:100%; height: 15rem">
+                <h3>100 PIPERS</h3>
+                <p>From Scotland</p>
+                <p>42.8% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(1)">
+                <img src="./Image/285.jpg" alt="Steak" style="width:100%; height: 15rem">
+                <h3>BLEND 285</h3>
+                <p>From shailand</p>
+                <p>35% alc </p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(2)">
+                <img src="./Image/ballentine.jpg" alt="Cherries" style="width:100%; height: 15rem;">
+                <h3>BALLENTINE</h3>
+                <p>From Scotland</p>
+                <p>35% alc </p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(3)">
+                <img src="./Image/blue.jpg" alt="Pasta and Wine" style="width:100%; height: 15rem">
+                <h3>BLUE LABEL</h3>
+                <p>From Scotland </p>
+                <p>40% alc</p>
+            </div>
+            
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter cursorPointer" onclick="linkPage(4)">
+                <img src="./Image/jack.jpg" alt="Popsicle" style="width:100%; height: 15rem">
+                <h3>JACK DANIELS</h3>
+                <p>From USA </p>
+                <p>40% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(5)">
+                <img src="./Image/Johnnie-Walker-Black.jpg" alt="Salmon" style="width:100%; height: 15rem">
+                <h3>BLACK LABEL</h3>
+                <p>From Scotland </p>
+                <p>40% alc</p>
+            </div>
+            <div class="w3-quarter  cursorPointer" onclick="linkPage(6)">
+                <img src="./Image/Johnnie-Walker-Red.jpg" alt="Sandwich" style="width:100%; height: 15rem">
+                <h3>RED LABEL</h3>
+                <p>From Scotland </p>
+                <p>40% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(7)">
+                <img src="./Image/หง.jpg" alt="Croissant" style="width:100%; height: 15rem">
+                <h3>HONGTHONG</h3>
+                <p>From Thailand </p>
+                <p>35% alc</p>
+            </div>
+            
+        </div>
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter cursorPointer" onclick="linkPage(8)">
+                <img src="./Image/แสง.jpg" alt="Pasta and Wine" style="width:100%; height: 15rem">
+                <h3>SANGSOM</h3>
+                <p>From Thailand </p>
+                <p>35% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(9)">
+                <img src="./Image/Hennessy-.jpg" alt="Pasta and Wine" style="width:100%; height: 15rem">
+                <h3>HENNESSY</h3>
+                <p>From France </p>
+                <p>40% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(10)">
+                <img src="./Image/Maridian.jpg" alt="Pasta and Wine" style="width:100%; height: 15rem">
+                <h3>MERIDIAN</h3>
+                <p>From Thailand </p>
+                <p>38% alc</p>
+            </div>
+            <div class="w3-quarter cursorPointer" onclick="linkPage(11)">
+                <img src="./Image/JimBeam.jpg" alt="Pasta and Wine" style="width:100%; height: 15rem">
+                <h3>JIMBEAM</h3>
+                <p>From USA </p>
+                <p>40% alc</p>
+            </div>
+            
+        </div>
+
+        
+            
+        </div>
+
+        <hr id="about">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32 w3-center">
+            <img src="./Image/TAKE ME HOME (1).png" alt="Me" class="w3-image"
+                style="display:block;margin:auto" width="800" height="533">
+            <div class="w3-padding-32">
+                <h4><b>Take me home about</b></h4>
+                
+                <p>เว็ปไซต์ทราเราได้ขึ้นมา ไม่ได้ชักชวนในการดื่มสุราหรือแอลกอฮอล์แต่อย่างใด 
+                    เว็ปไซต์นี้เราจัดทำเพื่อให้ความรู้เกี่ยวกับเครื่องดื่มแอลกอฮอล์ ว่ามีที่มา มีประวัติอย่างไร
+                    ไม่ว่าจะเป็นเหล้า เบียร์ หรือ เครื่องดื่มที่มีส่วนผสมของแอลกอฮอล์อีกมากมาย เป็นต้น.</p>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+    <script src="./JavaScript/index.js"></script>
+
+
+</body>
+
+</html>
