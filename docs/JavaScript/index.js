@@ -1,18 +1,18 @@
 function linkPage(index) {
     console.log(index);
     var link = [
-        "./Pages/pageDetail_1.html",
-        "./Pages/pageDetail_2.html",
-        "./Pages/pageDetail_3.html",
-        "./Pages/pageDetail_4.html",
-        "./Pages/pageDetail_5.html",
-        "./Pages/pageDetail_6.html",
-        "./Pages/pageDetail_7.html",
-        "./Pages/pageDetail_8.html",
-        "./Pages/pageDetail_9.html",
-        "./Pages/pageDetail_10.html",
-        "./Pages/pageDetail_11.html",
-        "./Pages/pageDetail_12.html",
+        "./pages/pageDetail_1.html",
+        "./pages/pageDetail_2.html",
+        "./pages/pageDetail_3.html",
+        "./pages/pageDetail_4.html",
+        "./pages/pageDetail_5.html",
+        "./pages/pageDetail_6.html",
+        "./pages/pageDetail_7.html",
+        "./pages/pageDetail_8.html",
+        "./pages/pageDetail_9.html",
+        "./pages/pageDetail_10.html",
+        "./pages/pageDetail_11.html",
+        "./pages/pageDetail_12.html",
     ];
 
     window.location.assign(link[index]);
