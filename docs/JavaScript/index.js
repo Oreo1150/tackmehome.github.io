@@ -1,5 +1,4 @@
 function linkPage(index) {
-    console.log(index);
     var link = [
         "./pages/pageDetail_1.html",
         "./pages/pageDetail_2.html",

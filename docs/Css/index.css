@@ -17,3 +17,83 @@ h6 {
 .cursorPointer:hover {
     background-color: rgb(207, 207, 202);
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section{
+    width: 1000px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+section div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > div > div{
+    position: relative;
+}
+
+section div p{
+    margin-top: 20px;
+}
+
+section div img{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+section div span{
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    transition: all .3s;
+}
+
+section div span a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section div >p:nth-of-type(2){
+    text-transform: capitalize;
+}
+
+section div span:hover{
+    opacity: 0.5;
+}
